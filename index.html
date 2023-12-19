@@ -12,33 +12,33 @@
         <div id="nave">
             <img id="logo"  src="./assit/logo1.png" alt="logo">
         </div>
-        <div id="slog"><p>Craving a culinary adventure? Forget flipping through cookbooks or scouring endless recipe lists. Dive into the pantry possibilities with Ingredient Genie, your one-stop shop for unlocking the magic of any meal. <br> ✨
-            Simply type in any food name and you will get the ingredient for the food. <br>            
-            So, what are you waiting for? Let the cooking commence!
-        </p></div>
+        <div id="slog">
+            <p>Craving a culinary adventure? Forget flipping through cookbooks or scouring endless recipe lists. Dive into the pantry possibilities with Ingredient Genie, your one-stop shop for unlocking the magic of any meal.<br>
+                ✨Simply type in any food name and you will get the ingredient for the food. <br> So, what are you waiting for? Let the cooking commence!
+            </p>
+        </div>
         <div id="input">
-            <input type="search" id="searchbox" placeholder="Search Your Recipy">
-            <button class="search" id="search">Search</button>
+            <input type="search" id="searchbox" placeholder="Search Your Recipe">   <!-- Creating placeholder for search button -->
+            <button class="search" id="search">Search</button>      <!-- Creating button for search button -->
         </div>
     </div>
-    <div class="randomPick">
+    <div class="randomPick">     <!-- Section for displaying a random recipe -->
         <div class="refreshOurPick">
             <h2 id="pick">Random Pick For You 😋</h2>
         </div>
         <div id="randomDish">
-        </div>
-        <div class="meal-result">
+        </div>    <!-- Content for the random dish will be displayed here -->
+        <div class="meal-result">     <!-- Section for displaying search results -->
             <h2 class="title hidden" id="searchTitle">Your Search Results:</h2>
-            <div id="searchedMeals" class="searched-meal-container"></div>
+            <div id="searchedMeals" class="searched-meal-container"></div>      <!-- Container for searched meals -->
         </div>
-        <div id="modal" class="modal">
+        <div id="modal" class="modal">       <!-- Modal for displaying recipe details -->
             <div class="modal-content">
-              <span class="close">&times;</span>
-              <h2 id="modalTitle"></h2>
-              <div id="modalIngredients"></div>
+                <span class="close">&times;</span>       <!-- Button to close the modal -->
+                <h2 id="modalTitle"></h2>   <!-- Title for the modal -->
+                <div id="modalIngredients"></div>     <!-- Section to display ingredients in the modal -->
             </div>
-          </div>
-                        
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     randomMealDiv.innerHTML = `<p>${meal.strMeal}</p><img src="${meal.strMealThumb}" alt="${meal.strMeal}" data-mealid="${meal.idMeal}">`;
   })
   .catch(error => console.error('Error fetching random meal:', error));
+  
   const searchedMealsDiv = document.getElementById('searchedMeals');
   const searchTitle = document.getElementById('searchTitle');
   
@@ -64,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
       searchTitle.classList.add('hidden');
     }
   }
+  
   const searchInput = document.getElementById('searchbox');
   searchInput.addEventListener('input', handleSearchInput);
   
