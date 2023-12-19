@@ -1,7 +1,8 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
+
 #main{
     background-image: url(./assit/background_image.png);
     width: 100%;
@@ -17,6 +18,7 @@
 
 #logo{
     height: 18vh;
+    border-radius: 10px;
 }
 
 #slog{
@@ -68,11 +70,12 @@ input[type=search]:focus {
     flex-direction: column;
 }
 
+
 #randomDish {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text */
+    align-items: center;
+    text-align: center;
     margin-bottom: 20px; /* Add some space at the bottom */
 }
 
@@ -121,7 +124,6 @@ input[type=search]:focus {
     margin-bottom: 20px; /* Add space between rows */
 }
 
-/* Add styles for the modal */
 .modal {
     display: none;
     position: fixed;
@@ -155,16 +157,17 @@ input[type=search]:focus {
     text-decoration: none;
     cursor: pointer;
 }
-/* Adjustments for smaller screens (e.g., mobile devices) */
+
+/* Mobile Responsive */
 @media only screen and (max-width: 500px) {
     #main{
         background-image: url(./assit/background_image.png);
-        background-size: 100%;
         width: 100%;
         height: 60vh;
         background-size: cover;
         overflow: hidden;
     }
+    
     #logo{
         height: 80px;
         border-radius: 10px;
@@ -184,9 +187,17 @@ input[type=search]:focus {
         margin-left: 5vh;
     }
     input[type=search]:focus {
-        width: 200px;
+        width: 177px;
         background-color: white;
         border-color: #66CC75;
+    }
+
+    #pick{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        text-align: center;
     }
 
     #searchedMeals{
@@ -198,12 +209,12 @@ input[type=search]:focus {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-        gap: 20px; /* Add gap between items */
+        gap: 10px; /* Reduce the gap between items */
         margin-top: 20px;
     }
 
     .searched-meal {
-        flex: 0 0 calc(33.33% - 10px);
+        /* flex: 0 0 calc(33.33% - 10px); */
         width: calc(33.33% - 10px);
         box-sizing: border-box;
         padding: 0 5px; /* Adjust the padding between items */
@@ -211,14 +222,23 @@ input[type=search]:focus {
     }
 
     .searched-meal img {
-        width: calc(50% - 8px); /* Make the images fill half the container width */
-        height: auto; /* Maintain aspect ratio */
+        width: calc(100% - 10px); /* Make the images fill the container width */
+        height: auto; 
         border-radius: 10px;
+        margin: auto;
+        margin-right: 0px;
         padding: 0px;
-        margin-bottom: 5px; /* Space between images */
-        margin-right: 4px; /* Adjusted margin between images */
+        overflow: hidden;
     }
-    /* Add styles for the modal */
+
+    .randomPick {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px;
+        overflow: hidden;
+    }
     .modal {
         display: none;
         position: fixed;
